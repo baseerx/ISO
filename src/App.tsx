@@ -55,7 +55,7 @@ const App = () => {
   function CardServices(props: any) {
     return (
       <div
-        className="w-full md:basis-1/3 transition text-center px-3 py-5 mb-3 shadow-lg"
+        className="w-full md:basis-1/3 transition text-center px-3 py-5 mb-3 shadow-md"
         style={{ backgroundColor: "rgba(30, 86, 142, 0.47)" }}
       >
         <div className="flex justify-center pt-10 pb-4">
