@@ -127,32 +127,22 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-3">
-            <div className="flex w-full md:w-[60%] justify-evenly  items-center gap-5 pb-4 md:px-0 px-4">
-              {/* <a
-                    href="#"
-                    className="transition border-2 border-yellow-400 bg-yellow-400 text-black py-4 px-6 w-[20%] text-center rounded-lg font-semibold hover:bg-yellow-500 mr-3"
-                  >
-                    Get Started
-                  </a>
-                  <a
-                    href="#"
-                    className="transition border-2 border-lime-500 text-white py-4 px-6 w-[20%] text-center rounded-lg font-semibold hover:border-lime-300"
-                  >
-                    Learn more
-                  </a> */}
-
-              <div className="transition break-words border-2 border-lime-500 text-white md:ml-2 py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl">
-                Availability | 15000
+          <div className="flex flex-col md:flex-row gap-3 mt-4 container m-auto">
+            <div className="md:flex md:flex-row w-full lg:w-[60%] justify-evenly  items-center gap-5 pb-4 md:px-0 px-4 md:mr-6">
+              <div className="transition break-words border border-lime-500 text-white md:ml-2 md:py-8 py-4 px-6 md:basis-1/3 text-center rounded-lg font-light text-xl hover:border-lime-300 shadow-2xl mb-3 text-center">
+                Availability
+                <b className="block text-5xl font-normal">15000</b>
               </div>
-              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl">
-                Demand | 18000
+              <div className="transition break-words border border-lime-500 text-white md:py-8 py-4 px-6 md:basis-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl mb-3 text-center">
+                Demand
+                <b className="block text-5xl font-normal">18000</b>
               </div>
-              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl">
-                Generation | 13000
+              <div className="transition break-words border border-lime-500 text-white md:py-8 py-4 px-6 md:basis-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl mb-3 text-center">
+                Generation
+                <b className="block text-5xl font-normal">13000</b>
               </div>
             </div>
-            <div className="w-full md:w-[40%] px-4">
+            <div className="w-full lg:w-[40%] px-4">
               <GenerationDemand />
             </div>
           </div>
@@ -320,7 +310,7 @@ const App = () => {
         </div>
       </section>
 
-      <section className="bg-[url('/src/assets/images/bg/background.png')] bg-no-repeat bg-cover bg-center mb-6">
+      <section className="bg-[url('/src/assets/images/bg/background.png')] bg-no-repeat bg-cover bg-center pb-6">
         <div className="container mx-auto items-center p-4 md:p-10 bg-[#003366] text-white rounded-lg shadow-md">
           <div className="md:flex flex-row justify-between">
             <div className="basis-1/2 p-6 md:order-1">
