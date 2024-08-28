@@ -38,7 +38,7 @@ const App = () => {
 
   function CardArticle(props: any) {
     return (
-      <div className="w-full md:basis-1/3 transition text-center shadow-md hover:bg-slate-100 pb-5">
+      <div className="w-full md:basis-1/3 transition text-center shadow-md hover:bg-slate-100 pb-5 mb-2">
         <img src={props.image} alt="" className="w-full" />
         <h3 className="p-2 text-blue-950 font-medium text-xl">{props.title}</h3>
         <div className="mb-4 px-2 text-left">{props.shortDesc}</div>
