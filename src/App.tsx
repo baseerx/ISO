@@ -256,7 +256,7 @@ const App = () => {
               <img
                 src="/src/assets/images/banner/section-provide.png"
                 alt=""
-                className="w-full"
+                className="w-full rounded-sm"
               />
             </div>
           </div>
@@ -320,8 +320,8 @@ const App = () => {
         </div>
       </section>
 
-      <section className="bg-[url('/src/assets/images/bg/background.png')] bg-no-repeat bg-cover bg-center mb-6 ">
-        <div className="container mx-auto items-center p-4 md:p-10 bg-[#003366] text-white rounded-lg">
+      <section className="bg-[url('/src/assets/images/bg/background.png')] bg-no-repeat bg-cover bg-center mb-6">
+        <div className="container mx-auto items-center p-4 md:p-10 bg-[#003366] text-white rounded-lg shadow-md">
           <div className="md:flex flex-row justify-between">
             <div className="basis-1/2 p-6 md:order-1">
               <div className="font-title text-5xl font-medium mb-3">
