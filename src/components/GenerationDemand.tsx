@@ -77,7 +77,7 @@ const GenerationDemand = () => {
   ];
 
   return (
-    <div>
+    <div className="shadow-lg">
       <ApexCharts
         options={chartOptions}
         series={chartSeries}

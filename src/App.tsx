@@ -38,7 +38,7 @@ const App = () => {
 
   function CardArticle(props: any) {
     return (
-      <div className="w-full md:basis-1/3 transition text-center hover:bg-slate-100 pb-3">
+      <div className="w-full md:basis-1/3 transition text-center shadow-md hover:bg-slate-100 pb-5">
         <img src={props.image} alt="" className="w-full" />
         <h3 className="p-2 text-blue-950 font-medium text-xl">{props.title}</h3>
         <div className="mb-4 px-2 text-left">{props.shortDesc}</div>
@@ -55,7 +55,7 @@ const App = () => {
   function CardServices(props: any) {
     return (
       <div
-        className="w-full md:basis-1/3 transition text-center px-3 py-5 mb-3"
+        className="w-full md:basis-1/3 transition text-center px-3 py-5 mb-3 shadow-lg"
         style={{ backgroundColor: "rgba(30, 86, 142, 0.47)" }}
       >
         <div className="flex justify-center pt-10 pb-4">
@@ -142,13 +142,13 @@ const App = () => {
                     Learn more
                   </a> */}
 
-              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300">
+              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl">
                 Availability | 15000
               </div>
-              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300">
+              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl">
                 Demand | 18000
               </div>
-              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300">
+              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl">
                 Generation | 13000
               </div>
             </div>
@@ -158,49 +158,50 @@ const App = () => {
           </div>
         </div>
       </header>
-      <div className="container mx-auto flex justify-between items-center p-10">
-        <section>
-          <div className="w-3/4">
-            <div className="text-md text-orange-500 text-xl font-medium">
-              Expertise
+      <div className="bg-[url('/src/assets/images/bg/background.png')] bg-no-repeat bg-cover bg-center">
+        <div className="container mx-auto flex justify-between items-center p-10">
+          <section>
+            <div className="w-3/4">
+              <div className="text-md text-orange-500 text-xl font-medium">
+                Expertise
+              </div>
+              <h2 className="text-4xl text-blue-950 font-medium py-3 leading-snug">
+                Comprehensive Consulting Services for Energy Projects
+              </h2>
+              <div>
+                We provide a range of services to support energy projects,
+                including architectural, structural, and mechanical drawings for
+                gas stations and filling plants. We also offer energy regulatory
+                compliance services, environmental impact assessments, and
+                quotations for general engineering works.
+              </div>
             </div>
-            <h2 className="text-4xl text-blue-950 font-medium py-3 leading-snug">
-              Comprehensive Consulting Services for Energy Projects
-            </h2>
-            <div>
-              We provide a range of services to support energy projects,
-              including architectural, structural, and mechanical drawings for
-              gas stations and filling plants. We also offer energy regulatory
-              compliance services, environmental impact assessments, and
-              quotations for general engineering works.
+            <div className="md:flex md:flex-row my-10 gap-10 mb-16">
+              <CardArticle
+                image={buildingImage}
+                title="Architectural, Structural & Mechanical Drawings"
+                shortDesc="We conduct thorough environmental impact assessments and audits (EIA/EA) for energy projects in the oil and gas industry, as well as general projects."
+              />
+              <CardArticle
+                image={discosMap}
+                title="Architectural, Structural & Mechanical Drawings"
+                shortDesc="We conduct thorough environmental impact assessments and audits (EIA/EA) for energy projects in the oil and gas industry, as well as general projects."
+              />
+              <CardArticle
+                image={controlRoom}
+                title="Architectural, Structural & Mechanical Drawings"
+                shortDesc="We conduct thorough environmental impact assessments and audits (EIA/EA) for energy projects in the oil and gas industry, as well as general projects."
+              />
             </div>
-          </div>
-          <div className="md:flex md:flex-row my-10 gap-10 mb-16">
-            <CardArticle
-              image={buildingImage}
-              title="Architectural, Structural & Mechanical Drawings"
-              shortDesc="We conduct thorough environmental impact assessments and audits (EIA/EA) for energy projects in the oil and gas industry, as well as general projects."
-            />
-            <CardArticle
-              image={discosMap}
-              title="Architectural, Structural & Mechanical Drawings"
-              shortDesc="We conduct thorough environmental impact assessments and audits (EIA/EA) for energy projects in the oil and gas industry, as well as general projects."
-            />
-            <CardArticle
-              image={controlRoom}
-              title="Architectural, Structural & Mechanical Drawings"
-              shortDesc="We conduct thorough environmental impact assessments and audits (EIA/EA) for energy projects in the oil and gas industry, as well as general projects."
-            />
-          </div>
-          <a
-            href="#"
-            className="transition border-2 border-yellow-400 bg-yellow-400 text-black py-3 px-6 w-[20%] text-center rounded-lg font-semibold hover:bg-yellow-500 mr-3"
-          >
-            See All
-          </a>
-        </section>
+            <a
+              href="#"
+              className="transition border-2 border-yellow-400 bg-yellow-400 text-black py-3 px-6 w-[20%] text-center rounded-lg font-semibold hover:bg-yellow-500 mr-3"
+            >
+              See All
+            </a>
+          </section>
+        </div>
       </div>
-
       <section className="bg-[#003366] text-white">
         <div className="container mx-auto items-center p-10">
           <div className="justify-center">
@@ -229,7 +230,7 @@ const App = () => {
         </div>
       </section>
 
-      <section>
+      <section className="bg-[url('/src/assets/images/bg/background.png')] bg-no-repeat bg-cover bg-center">
         <div className="container mx-auto items-center md:p-10">
           <div className="container mx-auto  justify-between items-center p-10">
             <div className="md:flex md:flex-row">
@@ -280,7 +281,7 @@ const App = () => {
         </div>
       </section>
 
-      <section>
+      <section className="bg-[url('/src/assets/images/bg/background.png')] bg-no-repeat bg-cover bg-center">
         <div className="container mx-auto items-center md:p-10">
           <div className="container mx-auto  justify-between items-center p-10">
             <div className="md:flex md:flex-row">
@@ -303,7 +304,7 @@ const App = () => {
                 <br />
                 <br />
               </div>
-              <div className="md:w-1/2">
+              <div className="md:w-1/2 bg-white opacity-75 p-5 shadow-xl rounded-sm">
                 <div className="text-3xl text-blue-950 font-normal mb-4">
                   Frequent Asked Questions
                 </div>
@@ -319,7 +320,7 @@ const App = () => {
         </div>
       </section>
 
-      <section className="mb-6 mx-6">
+      <section className="bg-[url('/src/assets/images/bg/background.png')] bg-no-repeat bg-cover bg-center mb-6 ">
         <div className="container mx-auto items-center p-4 md:p-10 bg-[#003366] text-white rounded-lg">
           <div className="md:flex flex-row justify-between">
             <div className="basis-1/2 p-6 md:order-1">
@@ -402,7 +403,6 @@ const App = () => {
 
               <div className="mt-6 flex flex-row">
                 <a href="#" className="mr-5">
-     
                   <img
                     src="/src/assets/images/icons/icon-sosmed.png"
                     alt=""
@@ -410,7 +410,6 @@ const App = () => {
                   />
                 </a>
                 <a href="#" className="mr-5">
-           
                   <img
                     src="/src/assets/images/icons/icon-sosmed.png"
                     alt=""
@@ -418,7 +417,6 @@ const App = () => {
                   />
                 </a>
                 <a href="#" className="mr-5">
-        
                   <img
                     src="/src/assets/images/icons/icon-sosmed.png"
                     alt=""
