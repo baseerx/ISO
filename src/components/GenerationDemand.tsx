@@ -49,10 +49,11 @@ const GenerationDemand = () => {
     },
     tooltip: {
       shared: true,
-      intersect: false,
+        intersect: false,
+      theme:'dark',
       style: {
         fontSize: "12px",
-        color: "#FFFFFF", // Set tooltip text color
+        color: "#000", // Set tooltip text color
       },
     },
     legend: {
