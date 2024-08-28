@@ -304,7 +304,7 @@ const App = () => {
                 <br />
                 <br />
               </div>
-              <div className="md:w-1/2 bg-white opacity-75 p-5 shadow-xl rounded-sm">
+              <div className="md:w-1/2 bg-white opacity-75 p-5 shadow-md rounded-sm">
                 <div className="text-3xl text-blue-950 font-normal mb-4">
                   Frequent Asked Questions
                 </div>
