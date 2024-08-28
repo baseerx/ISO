@@ -129,17 +129,17 @@ const App = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-3 mt-4 container m-auto">
             <div className="md:flex md:flex-row w-full lg:w-[60%] justify-evenly  items-center gap-5 pb-4 md:px-0 px-4 md:mr-6">
-              <div className="transition break-words border border-lime-500 text-white md:ml-2 md:py-8 py-4 px-6 md:basis-1/3 text-center rounded-lg font-light text-xl hover:border-lime-300 shadow-2xl mb-3 text-center">
+              <div className="transition break-words border border-lime-500 text-white md:ml-2 md:py-8 py-4 px-6 md:basis-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl mb-3 text-center">
                 Availability
-                <b className="block text-5xl font-normal">15000</b>
+                <b className="block text-5xl font-normal pt-2">15000</b>
               </div>
               <div className="transition break-words border border-lime-500 text-white md:py-8 py-4 px-6 md:basis-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl mb-3 text-center">
                 Demand
-                <b className="block text-5xl font-normal">18000</b>
+                <b className="block text-5xl font-normal pt-2">18000</b>
               </div>
               <div className="transition break-words border border-lime-500 text-white md:py-8 py-4 px-6 md:basis-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl mb-3 text-center">
                 Generation
-                <b className="block text-5xl font-normal">13000</b>
+                <b className="block text-5xl font-normal pt-2">13000</b>
               </div>
             </div>
             <div className="w-full lg:w-[40%] px-4">
