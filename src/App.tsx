@@ -127,8 +127,8 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-3">
-            <div className="flex w-[60%] justify-evenly  items-center gap-5 pb-4">
+          <div className="flex flex-col md:flex-row gap-3">
+            <div className="flex w-full md:w-[60%] justify-evenly  items-center gap-5 pb-4 md:px-0 px-4">
               {/* <a
                     href="#"
                     className="transition border-2 border-yellow-400 bg-yellow-400 text-black py-4 px-6 w-[20%] text-center rounded-lg font-semibold hover:bg-yellow-500 mr-3"
@@ -142,17 +142,17 @@ const App = () => {
                     Learn more
                   </a> */}
 
-              <div className="transition border-2 border-lime-500 text-white py-8 px-6 w-[25%] text-center rounded-lg font-semibold text-2xl hover:border-lime-300">
+              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300">
                 Availability | 15000
               </div>
-              <div className="transition border-2 border-lime-500 text-white py-8 px-6 w-[25%] text-center rounded-lg font-semibold text-2xl hover:border-lime-300">
+              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300">
                 Demand | 18000
               </div>
-              <div className="transition border-2 border-lime-500 text-white py-8 px-6 w-[25%] text-center rounded-lg font-semibold text-2xl hover:border-lime-300">
+              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300">
                 Generation | 13000
               </div>
             </div>
-            <div className="w-[40%]">
+            <div className="w-full md:w-[40%] px-4">
               <GenerationDemand />
             </div>
           </div>
