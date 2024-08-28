@@ -142,7 +142,7 @@ const App = () => {
                     Learn more
                   </a> */}
 
-              <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl">
+              <div className="transition break-words border-2 border-lime-500 text-white md:ml-2 py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl">
                 Availability | 15000
               </div>
               <div className="transition break-words border-2 border-lime-500 text-white py-8 px-6 w-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl">
