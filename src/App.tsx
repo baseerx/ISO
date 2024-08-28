@@ -375,7 +375,7 @@ const App = () => {
                     style={{ height: 20 }}
                   />
                 </div>
-                <div>+254 768 794629</div>
+                <div>+923459275557</div>
               </div>
               <div className="pt-2 flex flex-row">
                 <div>
@@ -386,7 +386,7 @@ const App = () => {
                     style={{ height: 20 }}
                   />
                 </div>
-                <div>info@pentonenergy.com</div>
+                <div>iso@pakistan.com</div>
               </div>
               <div className="pt-2 flex flex-row">
                 <div>
@@ -397,12 +397,12 @@ const App = () => {
                     style={{ height: 20 }}
                   />
                 </div>
-                <div>Ruiru, Kenya</div>
+                <div>Islamabad, Pakistan</div>
               </div>
 
               <div className="mt-6 flex flex-row">
                 <a href="#" className="mr-5">
-                  {" "}
+     
                   <img
                     src="/src/assets/images/icons/icon-sosmed.png"
                     alt=""
@@ -410,7 +410,7 @@ const App = () => {
                   />
                 </a>
                 <a href="#" className="mr-5">
-                  {" "}
+           
                   <img
                     src="/src/assets/images/icons/icon-sosmed.png"
                     alt=""
@@ -418,7 +418,7 @@ const App = () => {
                   />
                 </a>
                 <a href="#" className="mr-5">
-                  {" "}
+        
                   <img
                     src="/src/assets/images/icons/icon-sosmed.png"
                     alt=""
