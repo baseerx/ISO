@@ -38,3 +38,35 @@ body {
   border-radius: 4px;
   font-size: 14px;
 }
+.slick-dots {
+  bottom: 40px !important;
+}
+.breaking-news-running {
+  margin-top: -36px;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 1;
+}
+.slick-slider {
+  background-color: #000;
+}
+.slick-slider img {
+  opacity: 0.4;
+}
+.hero-slide-text {
+  position: absolute;
+  text-align: center;
+  line-height: 120%;
+  z-index: 1;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-weight: medium;
+}
+.slick-dots li button:before {
+  color:white;
+  opacity: 0.4;
+  font-size: 10px;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fff;
+}
