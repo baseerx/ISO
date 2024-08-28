@@ -5,7 +5,7 @@ import logoSite from "../assets/images/logo/logo-site.png";
 const Header = () => {
   return (
     <>
-      <nav className="bg-white md:p-4 md:p-2">
+      <nav className="bg-white md:p-4 md:p-2 shadow-md">
         <div className="container mx-auto md:flex md:justify-between items-center">
           <a href="#" className="text-xl font-bold">
             <img 
