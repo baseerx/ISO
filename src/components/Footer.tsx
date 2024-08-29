@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoSite from "../assets/images/logo/logo-site.png";
+import logoSite from "../assets/images/logo/so_logo.png";
 
 
 const Footer = () => {
@@ -16,17 +16,17 @@ const Footer = () => {
                 <div className="pt-6 flex flex-row">
                     <div>
                     <img className="mr-6" src="/src/assets/images/icons/bxs_phone-call.png" alt="" style={{height:20}}/>
-                    </div><div>+254 768 794629</div>
+                    </div><div>+92-345-9275557</div>
                 </div>
                 <div className="pt-2 flex flex-row">
                     <div>
                     <img className="mr-6" src="/src/assets/images/icons/ic_sharp-email.png" alt="" style={{height:20}}/>
-                    </div><div>info@pentonenergy.com</div>
+                    </div><div>iso@pakistan.com</div>
                 </div>
                 <div className="pt-2 flex flex-row">
                     <div>
                     <img className="mr-6" src="/src/assets/images/icons/carbon_location-filled.png" alt="" style={{height:20}}/>
-                    </div><div>Ruiru, Kenya</div>
+                    </div><div>Islamabad, Pakistan</div>
                 </div>
             </div>
             <div className="md:basis-1/3 text-left">

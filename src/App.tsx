@@ -8,11 +8,31 @@ import "./App.css";
 import cardImage1 from "./assets/images/banner/1.png";
 import cardImage2 from "./assets/images/banner/2.png";
 import cardImage3 from "./assets/images/banner/3.png";
+import cardImage4 from "./assets/images/banner/4.png";
+import cardImage5 from "./assets/images/banner/5.png";
+import cardImage6 from "./assets/images/banner/6.png";
+import cardImage7 from "./assets/images/banner/7.png";
+import cardImage8 from "./assets/images/banner/8.png";
+
+import cardImage10 from "./assets/images/banner/10.png";
+
 import buildingImage from "./assets/images/cards/1.png";
 import controlRoom from "./assets/images/cards/3.png";
 import discosMap from "./assets/images/cards/4.png";
+import MainCard from "./components/MainCard";
+import BelowHero from "./components/BelowHero";
 
-const heroImages = [cardImage1, cardImage2, cardImage3];
+const heroImages = [
+  cardImage7,
+  cardImage8,
+  cardImage10,
+  cardImage1,
+  cardImage2,
+  cardImage3,
+  cardImage4,
+  cardImage5,
+  cardImage6,
+];
 
 const App = () => {
   const settings = {
@@ -22,7 +42,7 @@ const App = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2500,
     fade: true, // Optional: for fade transition
     responsive: [
       {
@@ -51,7 +71,19 @@ const App = () => {
       </div>
     );
   }
-
+  function CardArticleText(props: any) {
+    return (
+      <div className="w-3/4">
+        <div className="text-md text-orange-500 text-xl font-medium">
+          {props.title}
+        </div>
+        <h2 className="text-4xl text-blue-950 font-medium py-3 leading-snug">
+          {props.subtitle}
+        </h2>
+        <div>{props.detail}</div>
+      </div>
+    );
+  }
   function CardServices(props: any) {
     return (
       <div
@@ -109,38 +141,19 @@ const App = () => {
             src={heroImage1}
         /> */}
         <div className="text-hero bg-[#003366]">
-          <div className="container mx-auto flex justify-between items-center p-5 pb-3 md:px-0">
-            <div className="md:flex md:flex-row md:gap-10">
-              <div className="md:w-1/2 pb-6">
-                <h1 className="font-title text-5xl">
-                  Where Innovation Meets Energy Excellence
-                </h1>
-              </div>
-              <div className="md:w-1/2">
-                <div>
-                  Penton is more than a service provider; we're your trusted
-                  energy partner. With our expertise, reliability, and
-                  personalized approach, we're committed to helping you achieve
-                  your energy objectives efficiently and effectively. Partner
-                  with us and unlock your full potential in energy.
-                </div>
-              </div>
-            </div>
-          </div>
+          <BelowHero
+            title="Where Innovation Meets Energy Excellence"
+            detail=" Penton is more than a service provider; we're your trusted energy
+            partner. With our expertise, reliability, and personalized approach,
+            we're committed to helping you achieve your energy objectives
+            efficiently and effectively. Partner with us and unlock your full
+            potential in energy."
+          />
           <div className="flex flex-col md:flex-row gap-3 mt-4 container m-auto">
             <div className="md:flex md:flex-row w-full lg:w-[60%] justify-evenly  items-center gap-5 pb-4 md:px-0 px-4 md:mr-6">
-              <div className="transition break-words border border-lime-500 text-white md:ml-2 md:py-8 py-4 px-6 md:basis-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl mb-3 text-center">
-                Availability
-                <b className="block text-5xl font-normal pt-2">15000</b>
-              </div>
-              <div className="transition break-words border border-lime-500 text-white md:py-8 py-4 px-6 md:basis-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl mb-3 text-center">
-                Demand
-                <b className="block text-5xl font-normal pt-2">18000</b>
-              </div>
-              <div className="transition break-words border border-lime-500 text-white md:py-8 py-4 px-6 md:basis-1/3 text-center rounded-lg font-semibold text-2xl hover:border-lime-300 shadow-2xl mb-3 text-center">
-                Generation
-                <b className="block text-5xl font-normal pt-2">13000</b>
-              </div>
+              <MainCard title="Availability" value={25000} />
+              <MainCard title="Demand" value={18000} />
+              <MainCard title="Generation" value={13000} />
             </div>
             <div className="w-full lg:w-[40%] px-4">
               <GenerationDemand />
@@ -151,21 +164,16 @@ const App = () => {
       <div className="bg-[url('/src/assets/images/bg/background.png')] bg-no-repeat bg-cover bg-center">
         <div className="container mx-auto flex justify-between items-center p-10">
           <section>
-            <div className="w-3/4">
-              <div className="text-md text-orange-500 text-xl font-medium">
-                Expertise
-              </div>
-              <h2 className="text-4xl text-blue-950 font-medium py-3 leading-snug">
-                Comprehensive Consulting Services for Energy Projects
-              </h2>
-              <div>
-                We provide a range of services to support energy projects,
+            <CardArticleText
+              title="Expertise"
+              subtitle="Comprehensive Consulting Services for Energy Projects"
+              detail=" We provide a range of services to support energy projects,
                 including architectural, structural, and mechanical drawings for
                 gas stations and filling plants. We also offer energy regulatory
                 compliance services, environmental impact assessments, and
-                quotations for general engineering works.
-              </div>
-            </div>
+                quotations for general engineering works."
+            />
+
             <div className="md:flex md:flex-row my-10 gap-10 mb-16">
               <CardArticle
                 image={buildingImage}
@@ -310,7 +318,7 @@ const App = () => {
         </div>
       </section>
 
-      <section className="bg-[url('/src/assets/images/bg/background.png')] bg-no-repeat bg-cover bg-center pb-6">
+      <section className="bg-[url('/src/assets/images/bg/background.png')]  bg-no-repeat bg-cover bg-center pb-6">
         <div className="container mx-auto items-center p-4 md:p-10 bg-[#003366] text-white rounded-lg shadow-md">
           <div className="md:flex flex-row justify-between">
             <div className="basis-1/2 p-6 md:order-1">

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import logoSite from "../assets/images/logo/logo-site.png";
-
+import siteLogo from "../assets/images/logo/so_logo.png";
 
 const Header = () => {
   return (
@@ -8,10 +7,7 @@ const Header = () => {
       <nav className="bg-white md:p-4 md:p-2 shadow-md">
         <div className="container mx-auto md:flex md:justify-between items-center">
           <a href="#" className="text-xl font-bold">
-            <img 
-                src={logoSite}
-                className="h-10 md:h-14"
-            />
+            <img src={siteLogo} className="h-12 md:h-16" />
           </a>
           <ul className="flex flex-row space-x-6 font-title text-xl justify-center pt-4 md:pt-0">
             <li>
@@ -35,11 +31,14 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <a href="#" className="absolute md:relative transition btn-quote hover:bg-orange-500 top-2 md:top-0 right-2">Request a Quote</a>
+          <a
+            href="#"
+            className="absolute md:relative transition btn-quote hover:bg-orange-500 top-2 md:top-0 right-2"
+          >
+            Request a Quote
+          </a>
         </div>
-        
       </nav>
-
     </>
   );
 };
