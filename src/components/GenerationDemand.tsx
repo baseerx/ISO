@@ -1,36 +1,37 @@
 import React from "react";
 import ApexCharts from "react-apexcharts";
+import { ApexOptions } from "apexcharts";
 
-const GenerationDemand = () => {
-  const chartOptions = {
+const GenerationDemand: React.FC = () => {
+  const chartOptions: ApexOptions = {
     chart: {
       id: "electricity-comparison",
       type: "line",
     },
     xaxis: {
-      categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"], // Example months or time periods
+      categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
       title: {
         text: "Time Period",
         style: {
-          color: "#FFFFFF", // Set x-axis title color
+          color: "#FFFFFF",
         },
       },
       labels: {
         style: {
-          colors: "#FFFFFF", // Set x-axis labels color
+          colors: "#FFFFFF",
         },
       },
     },
     yaxis: {
       title: {
-        text: "Electricity (MWh)", // Example unit
+        text: "Electricity (MWh)",
         style: {
-          color: "#FFFFFF", // Set y-axis title color
+          color: "#FFFFFF",
         },
       },
       labels: {
         style: {
-          colors: "#FFFFFF", // Set y-axis labels color
+          colors: "#FFFFFF",
         },
       },
     },
@@ -38,7 +39,7 @@ const GenerationDemand = () => {
       text: "Electricity Generation vs Demand",
       align: "center",
       style: {
-        color: "#FFFFFF", // Set chart title color
+        color: "#FFFFFF",
       },
     },
     stroke: {
@@ -49,18 +50,17 @@ const GenerationDemand = () => {
     },
     tooltip: {
       shared: true,
-        intersect: false,
-      theme:'dark',
+      intersect: false,
+      theme: "dark",
       style: {
         fontSize: "12px",
-        color: "#000", // Set tooltip text color
       },
     },
     legend: {
       position: "top",
       horizontalAlign: "left",
       labels: {
-        colors: "#FFFFFF", // Set legend text color
+        colors: "#FFFFFF",
       },
     },
   };
@@ -68,11 +68,11 @@ const GenerationDemand = () => {
   const chartSeries = [
     {
       name: "Electricity Generation",
-      data: [30, 40, 35, 50, 49, 60, 70], // Example data
+      data: [30, 40, 35, 50, 49, 60, 70],
     },
     {
       name: "Electricity Demand",
-      data: [20, 30, 25, 45, 40, 55, 65], // Example data
+      data: [20, 30, 25, 45, 40, 55, 65],
     },
   ];
 

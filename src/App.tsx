@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import GenerationDemand from "./components/GenerationDemand";
 import "slick-carousel/slick/slick.css";
@@ -143,11 +142,11 @@ const App = () => {
         <div className="text-hero bg-[#003366]">
           <BelowHero
             title="Where Innovation Meets Energy Excellence"
-            detail=" Penton is more than a service provider; we're your trusted energy
-            partner. With our expertise, reliability, and personalized approach,
-            we're committed to helping you achieve your energy objectives
-            efficiently and effectively. Partner with us and unlock your full
-            potential in energy."
+            detail=" The National Power Control Center (NPCC) functions as the nerve center of the electricity generation and transmission system. The engineers of NPCC pass on instructions to GENCOS, IPPs, various formations of NTDC, DISCOS, & Residual WAPDA from its main control center and regional control centers to ensure smooth and economical system operation in providing electricity supply to the end customer as per grid code.
+                    •	National Control Centre Islamabad
+                    •	Regional Control Centre North Islamabad
+                    •	Regional Control Centre South Jamshoro
+                    All these Control centers functions round the clock."
           />
           <div className="flex flex-col md:flex-row gap-3 mt-4 container m-auto">
             <div className="md:flex md:flex-row w-full lg:w-[60%] justify-evenly  items-center gap-5 pb-4 md:px-0 px-4 md:mr-6">
@@ -165,13 +164,14 @@ const App = () => {
         <div className="container mx-auto flex justify-between items-center p-10">
           <section>
             <CardArticleText
-              title="Expertise"
-              subtitle="Comprehensive Consulting Services for Energy Projects"
-              detail=" We provide a range of services to support energy projects,
-                including architectural, structural, and mechanical drawings for
-                gas stations and filling plants. We also offer energy regulatory
-                compliance services, environmental impact assessments, and
-                quotations for general engineering works."
+              title="Mission Statement"
+              subtitle="Comprehensive Service of NTDC NPCC"
+              detail=" The National Power Control Center (NPCC) functions as the nerve
+                                center of the electricity generation and transmission system. The engineers of NPCC pass
+                                on instructions to GENCOS, IPPs, various formations of NTDC, DISCOS, & Residual WAPDA
+                                from its main control center and regional control centers to ensure smooth and
+                                economical system operation in providing electricity supply to the end customer as per
+                                grid code."
             />
 
             <div className="md:flex md:flex-row my-10 gap-10 mb-16">

@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import siteLogo from "../assets/images/logo/so_logo.png";
 
 const Header = () => {
