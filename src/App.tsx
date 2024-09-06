@@ -21,6 +21,12 @@ import discosMap from "./assets/images/cards/4.png";
 import MainCard from "./components/MainCard";
 import BelowHero from "./components/BelowHero";
 
+import ServiceOne from "./assets/images/cards/service1.png";
+import ServiceTwo from "./assets/images/cards/service2.png";
+import ServiceThree from "./assets/images/cards/service3.png";
+import SectionProvideImg from "./assets/images/banner/section-provide.png";
+
+
 const heroImages = [
   cardImage7,
   cardImage8,
@@ -203,24 +209,24 @@ const App = () => {
       <section className="bg-[#003366] text-white">
         <div className="container mx-auto items-center p-10">
           <div className="justify-center">
-            <h2 className="text-4xl  px-6 md:px-64 text-center font-normal ">
+            <h2 className="text-4xl  px-6 md:px-64 text-center font-normal">
               Streamline your operations with our Technical Audits and
               Compliance Services
             </h2>
           </div>
           <div className="md:flex md:flex-row my-10 gap-10 mb-16">
             <CardServices
-              image="/src/assets/images/cards/service-1.png"
+              image={ServiceOne}
               title="Ensure regulatory compliance with our Licenses and Permits Acquisition"
               shortDesc="Our dedicated team of experienced experts is committed to working closely with you to develop a comprehensive and effective Emergency Response Plan that is tailored to your specific needs and requirements."
             />
             <CardServices
-              image="/src/assets/images/cards/service-2.png"
+              image={ServiceTwo}
               title="Mitigate environmental risks with our Environmental Impact Assessments and Audits"
               shortDesc="We specialize in providing comprehensive EIA/EA (Environmental Impact Assessment/Environmental Assessment) services for various energy and oil & gas projects, including but not limited to feasibility studies, impact mitigation strategies, stakeholder engagement, and regulatory compliance assessments."
             />
             <CardServices
-              image="/src/assets/images/cards/service-3.png"
+              image={ServiceThree}
               title="Get accurate quotations for your general engineering and energy works"
               shortDesc="Our dedicated team of experienced professionals is committed to providing you with a range of competitive quotations that are customized to perfectly meet your specific needs and requirements."
             />
@@ -252,7 +258,7 @@ const App = () => {
             </div>
             <div className="w-full my-10">
               <img
-                src="/src/assets/images/banner/section-provide.png"
+                src={SectionProvideImg}
                 alt=""
                 className="w-full rounded-sm"
               />

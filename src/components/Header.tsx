@@ -3,7 +3,7 @@ import siteLogo from "../assets/images/logo/so_logo.png";
 const Header = () => {
   return (
     <>
-      <nav className="bg-white md:p-4 md:p-2 shadow-md">
+      <nav className="bg-white md:p-4 shadow-md fixed top-0 left-0 z-10 w-full">
         <div className="container mx-auto md:flex md:justify-between items-center">
           <a href="#" className="text-xl font-bold">
             <img src={siteLogo} className="h-12 md:h-16" />
